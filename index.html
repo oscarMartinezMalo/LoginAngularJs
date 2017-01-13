@@ -1,0 +1,61 @@
+<html ng-app="UserAuthTutorial">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body ng-controller="mainController">
+    <!--  <div class="jumbotron text-center">
+            <h1>Kolfi Jewelry</h1>
+            <p>Log-in || Sig-up</p>        
+        </div>
+        -->
+    <!-- <div class="dropdown">
+                                                                              show the modal       showthe dropdown    TexttoChange    changeIcon -->
+    <!--<button type="button" class="btn btn-info btn-lg dropbtn dropdown-toggle"   id="showModalYet" data-toggle="dropdown">SingIn / SignUp <span class="caretYet" ></span></button>-->
+    <!-- 
+           <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+            <li role="presentation"><a role="menuitem" href="#">Settings</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" href="#"><button class="btn btn-info btn-lg" ng-click="logout()">Log Out</button></a></li>
+        </ul>
+        </div>
+        -->
+    <toolbar></toolbar>
+    <!--<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Icon</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#" class="active btn-link btn-lg btn-block">Home</a></li>
+                <li><a href="#" class="btn-link btn-lg btn-block"> Jewelry</a></li>
+                <li><a href="#" class="btn-link btn-lg block"> Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><button type="button" class="glyphicon glyphicon-log-in btn-link btn-lg" ng-click="login()"> LogIn</button></li>
+                <li><button type="button" class="glyphicon glyphicon glyphicon-user btn-link btn-lg"> {{profile}}</button></li>
+                <li><button type="button" class="glyphicon glyphicon-log-out btn-link btn-lg" ng-click="logout()"> LogOut</button></li>
+            </ul>
+        </div>
+    </nav>-->
+
+
+    <div ui-view class="well">
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-messages.js"></script>
+<script src="app.js"></script>
+
+<script src="controllers/toolbar.js"></script>
+<script src="controllers/loginController.js"></script>
+<script src="services/authenticate-services.js"></script>
+<script src="controllers/mainController.js"></script>
+
+</html>
