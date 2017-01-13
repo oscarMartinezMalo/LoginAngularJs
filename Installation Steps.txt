@@ -1,0 +1,11 @@
+1-Create a DataBase named mydb
+2- Import the users table
+3- you are ready to go just install wamp 
+4-In the connection Php file you can modificate the currents values
+$servername = "localhost";
+
+$username = "root";
+
+$password = "";
+
+$dbname = "mydb";
